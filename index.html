@@ -1,74 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather-Dash</title>
-    <link rel ="stylesheet" type="text/css" href="./asset/style.css"/>
-</head>
-<body>
-      
-<center>
-    <h1 id="top">Past - Present - Future (Weather Forecast)</h1>
-    <p id="cityInput">city: <input type="text"  id="locationInput"> </p> 
-    <button onclick="getInfo()">Press Me!</button>
-    <h2 id="nameOfCity"> ======= Puerto Rico ======= </h2>
-</center>
+    <link rel="stylesheet" type="text/css" href="./asset/style.css" />
+  </head>
+  <body>
+    <center>
+      <h1 id="top">Past - Present - Future (Weather Forecast)</h1>
+      <p id="cityInput">city: <input type="text" id="locationInput" /></p>
+      <button onclick="getInfo()">Press Me!</button>
+      <h2 id="nameOfCity">======= Anywhere =======</h2>
+    </center>
 
+    
 
     <div id="weatherContainer">
-       <div class="icons">
-           <p class="weather"  id="day1"></p>
-              <div class="image"><img src="#"  class="imgClass"  id="img1"></div>               
-                 <p class="minValues"  id="day1Min">Loading....</p>
-                 <p class="maxValues"  id="day1Max"></p>
-                 <p class="humidity"   id="hum1"></p>
-                 <p class="wind"   id="wind1"></p>
+      <div class="icons"> <center>current-weather</center>
+        <div class="image"><img src="#" class="imgClass" id="img1" /></div>
+        <p class="minValues" id="day1Min"></p>
+        <p class="maxValues" id="day1Max">Daily High</p>
+        <p class="humidity" id="hum1"><h3></h3></p>
+        <p class="wind" id="wind1"><h1></h1></p>
+      </div>
+
+      <div class="icons">  <center>current-weather</center>
+        <div class="image"><img src="#" class="imgClass" id="img2" /></div>
+        <p class="minValues" id="day2Min">Loading....</p>
+        <p class="maxValues" id="day2Max">Daily High</p>
+        <p class="humidity" id="hum2"></p>
+        <p class="wind" id="wind2"></p>
+      </div>
+
+      <div class="icons"><center>current-weather</center>
+        <div class="image"><img src="#" class="imgClass" id="img3" /></div>
+        <p class="minValues" id="day3Min">Loading....</p>
+        <p class="maxValues" id="day3Max">Daily High</p>
+        <p class="humidity" id="hum3"></p>
+        <p class="wind" id="wind3"></p>
+      </div>
+
+      <div class="icons"><center>current-weather</center>
+        <div class="image"><img src="#" class="imgClass" id="img4" /></div>
+        <p class="minValues" id="day4Min">Loading....</p>
+        <p class="maxValues" id="day4Max">Daily High</p>
+        <p class="humidity" id="hum4"></p>
+        <p class="wind" id="wind4"></p>
+      </div>
+
+      <div class="icons"><center>current-weather</center>
+        <div class="image"><img src="#" class="imgClass" id="img5" /></div>
+        <p class="minValues" id="day5Min">Loading....</p>
+        <p class="maxValues" id="day5Max">Daily High</p>
+        <p class="humidity" id="hum5"></p>
+        <p class="wind" id="wind5"></p>
+      </div>
     </div>
-
-
-       <div class="icons">
-        <p class="weather"  id="day2"></p>
-           <div class="image"><img src="#"  class="imgClass"  id="img2"></div>               
-              <p class="minValues"  id="day2Min">Loading....</p>
-              <p class="maxValues"  id="day2Max"></p>
-              <p class="humidity"   id="hum2"></p>
-              <p class="wind"   id="wind2"></p>
-    </div>
-
-
-    <div class="icons">
-        <p class="weather"  id="day3"></p>
-           <div class="image"><img src="#"  class="imgClass"  id="img3"></div>               
-              <p class="minValues"  id="day3Min">Loading....</p>
-              <p class="maxValues"  id="day3Max"></p>
-              <p class="humidity"   id="hum3"></p>
-              <p class="wind"   id="wind3"></p>
-    </div>
-
-
-    <div class="icons">
-        <p class="weather"  id="day4"></p>
-           <div class="image"><img src="#"  class="imgClass"  id="img4"></div>               
-              <p class="minValues"  id="day4Min">Loading....</p>
-              <p class="maxValues"  id="day4Max"></p>
-              <p class="humidity"   id="hum4"></p>
-              <p class="wind"   id="wind4"></p>
-    </div>
-
-
-    <div class="icons">
-        <p class="weather"  id="day5"></p>
-           <div class="image"><img src="#" class="imgClass"  id="img5"  >   </div>               
-              <p class="minValues"  id="day5Min">Loading....</p>
-              <p class="maxValues"  id="day5Max"></p>
-              <p class="humidity"   id="hum5"></p>
-              <p class="wind"   id="wind5"></p>
-    </div>
-    </div>
-
 
     <script src="./asset/script.js"></script>
-</body>
+  </body>
 </html>

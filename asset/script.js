@@ -5,7 +5,7 @@ function getInfo(){
 }
 
 var apiKey = "f793886684d26495c42d8467c2445472"
-fetch(`http://api.openweathermap.org/geo/1.0/direct?q=Orlando,&limit=5&appid=${apiKey}`)
+fetch(`https://api.openweathermap.org/geo/1.0/direct?q=Orlando,&limit=5&appid=${apiKey}`)
 .then((response) => response.json()).then((data) => {
 
 
@@ -15,7 +15,7 @@ latitude= data[0].lat;
 console.log(latitude);
 
 
-fetch (`http://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`)
+fetch (`https://api.openweathermap.org/data/2.5/forecast?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=imperial`)
 .then((response) => response.json()).then((data) => {
 
 
