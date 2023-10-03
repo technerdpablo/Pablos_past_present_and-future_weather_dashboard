@@ -11,15 +11,18 @@
     <center>
       <h1 id="top">Past - Present - Future (Weather Forecast)</h1>
       <p id="cityInput">city: <input type="text" id="locationInput" /></p>
-      <button onclick="getInfo()">Press Me!</button>
+      <button id="submit">Press Me!</button>
       <h2 id="nameOfCity">======= Anywhere =======</h2>
     </center>
+    <h1>current weather</h1>
 
-    
+    <div id="current"></div>
 
     <div id="weatherContainer">
+      <h1>five day Forecast</h1>
       <div class="icons"> <center>current-weather</center>
         <div class="image"><img src="#" class="imgClass" id="img1" /></div>
+        <p id="day1"></p>
         <p class="minValues" id="day1Min"></p>
         <p class="maxValues" id="day1Max">Daily High</p>
         <p class="humidity" id="hum1"><h3></h3></p>
@@ -28,6 +31,7 @@
 
       <div class="icons">  <center>current-weather</center>
         <div class="image"><img src="#" class="imgClass" id="img2" /></div>
+        <p id="day2"></p>
         <p class="minValues" id="day2Min">Loading....</p>
         <p class="maxValues" id="day2Max">Daily High</p>
         <p class="humidity" id="hum2"></p>
@@ -36,6 +40,7 @@
 
       <div class="icons"><center>current-weather</center>
         <div class="image"><img src="#" class="imgClass" id="img3" /></div>
+        <p id="day3"></p>
         <p class="minValues" id="day3Min">Loading....</p>
         <p class="maxValues" id="day3Max">Daily High</p>
         <p class="humidity" id="hum3"></p>
@@ -44,6 +49,7 @@
 
       <div class="icons"><center>current-weather</center>
         <div class="image"><img src="#" class="imgClass" id="img4" /></div>
+        <p id="day4"></p>
         <p class="minValues" id="day4Min">Loading....</p>
         <p class="maxValues" id="day4Max">Daily High</p>
         <p class="humidity" id="hum4"></p>
@@ -52,13 +58,14 @@
 
       <div class="icons"><center>current-weather</center>
         <div class="image"><img src="#" class="imgClass" id="img5" /></div>
+        <p id="day5"></p>
         <p class="minValues" id="day5Min">Loading....</p>
         <p class="maxValues" id="day5Max">Daily High</p>
         <p class="humidity" id="hum5"></p>
         <p class="wind" id="wind5"></p>
       </div>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
     <script src="./asset/script.js"></script>
   </body>
 </html>
